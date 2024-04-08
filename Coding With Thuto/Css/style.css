@@ -1,0 +1,297 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:bolder-box;
+	font-family:Roboto-Regular;
+	color: #777;
+	
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.container{
+	max-width:900px;
+	margin:0 auto;
+	padding: 0 0.5em
+}
+
+.container nav.desk{
+	width: 100%;
+	background: #721330;
+	height: 60px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0.20);
+	position: fixed;
+	left: 0;
+	top: 0;
+	text-decoration: solid;
+		
+}
+
+nav.desk ul{
+	list-style: none;
+	width: 75%;
+	height: 60px;
+	margin: 0 auto;	
+}
+
+nav.desk ul li{
+	width: 20%;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+nav.desk ul li:hover{
+	background: #2d4171;
+}
+
+nav.desk ul li.active{
+	background: #721330;
+}
+
+nav.desk ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+.hero-image{
+	width: 100%;
+	height: 450px;
+}
+
+.main-heading{
+	font-family:Roboto-Regular;
+	text-align: center;
+	color: blue
+}
+.author{
+	font-family:Roboto-Regular;
+	text-align: center;
+}
+
+.main-footer{
+	background-color: #721330;
+	color:white;
+	padding: .15em 0;
+	width: 100%;
+	
+}
+
+.main-footer-container{
+	display:flex;
+	align-items:center;
+	
+}
+
+.main-footer-container{
+	flex-grow: 1;
+	text-align: center;
+	
+}
+
+.footer-nav{
+	padding: 0 .5em;
+	align-items: center;
+}
+
+.main-footer-container .main-footer .footer-nav{
+	align-items: center;
+	display: inline;
+	width: 40px;
+	height: 40px;
+}
+
+.header-name-two{
+	text-align:center;
+	margin:0;
+	font-size: 1.5em;
+	font-family:The Miladiator;
+	color: black;
+	font-weight: normal;
+}
+
+.nav a{
+	display: inline-block;
+	padding:5em;
+	color: white;
+	text-decoration:none;
+	
+}
+
+.nav a:hover{background-color:rgba(255,255,255,.3);
+}
+
+.about-image-one{
+	width: 100%;
+	height: 450px;
+}
+
+.about-image-two{
+	float:left;
+	height:200px;
+	width:200px;
+	margin: 15px;
+	border-radius:40%;
+}
+
+.about-image-three{
+	float:right;
+	height:200px;
+	width:200px;
+	margin: 15px;
+	border-radius:40%;
+}
+
+.about-image-four{
+	float:left;
+	height:200px;
+	width:200px;
+	margin: 15px;
+	border-radius:40%;
+}
+
+.third-heading{
+	font-family:The Miladiator;
+	text-align: center;
+	color: blue
+	
+}
+
+.slideshow{
+	margin:0 auto;
+	margin-bottom:10px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	height:300px;
+	box-sizing:border-box;
+}
+
+.contents{
+	margin: auto;
+	width: 190px;
+	perspective: 1000px;
+	padding-top: 40px;
+	position:relative;
+	padding-bottom: 40px;
+}
+
+.content-carrouse1{
+	width:100%;
+	position:absolute;
+	float:right;
+	animation:rotar 20s infinite linear;
+	transform-style:preserve-3d;
+}
+
+.content-carrouse1:hover{
+	animation-play-state:paused;
+	cursor:pointer;
+}
+
+.content-carrouse1 figure{
+	width:100%;
+	height:120px;
+	border:1 px solid #4d444d;
+	overflow:hidden;
+	position:absolute;
+}
+
+.content-carrouse1 figure:nth-child(1){
+	transform:rotateY(0deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(2){
+	transform:rotateY(40deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(3){
+	transform:rotateY(80deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(4){
+	transform:rotateY(120deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(5){
+	transform:rotateY(160deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(6){
+	transform:rotateY(200deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(7){
+	transform:rotateY(240deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(8){
+	transform:rotateY(280deg) translateZ(400px)
+}
+.content-carrouse1 figure:nth-child(9){
+	transform:rotateY(320deg) translateZ(400px)
+}
+
+.shadow{
+	position:absolute;
+	box-shadow: 0px 0px 20px 0px #000
+	border-radius: 2px;
+}
+
+.content-carrouse1 img{
+	image-rendering: auto;
+	transition: all 90ms;
+	width:100%;
+	height:100%;
+}
+
+.content-carrouse1 img:hover{
+	transform:scale(1.2);
+	transition: all 90ms;
+}
+
+@keyframes rotar{
+	from{
+		transform:rotateY(0deg);
+	} to {
+		transform:rotateY(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
